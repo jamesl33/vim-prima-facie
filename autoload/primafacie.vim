@@ -1,4 +1,4 @@
-function! primafacie#AddLatinPhrases() abort 
+function! primafacie#AddLatinPhrases() abort
 
   " Keywords
   syntax keyword primaLatin apo holo circa ergo
@@ -30,6 +30,7 @@ function! primafacie#AddLatinPhrases() abort
   syntax match primaLatin "[qQ]uid[ \n]pro[ \n]quo" contains=@NoSpell
   syntax match primaLatin "[sS]ine[ \n]qua[ \n]non" contains=@NoSpell
   syntax match primaLatin "[vV]ice[ \n]versa" contains=@NoSpell
+  syntax match primaLatin "[eE]t[ \n]al" contains=@NoSpell
 
   " Bacterial species
   syntax match primaLatin "B\.[ \n]\+anthracis" contains=@NoSpell
